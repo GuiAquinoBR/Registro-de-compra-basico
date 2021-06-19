@@ -43,7 +43,7 @@ class Cliente(Pessoa):
         return reduce(lambda c1,c2: c1 + c2, (compra.valor for compra in self.compras))
 
 
-class Compra():
+class Compra:
     def __init__(self, vendedor, data, valor):
         self.vendedor = vendedor
         self.data = datetime
